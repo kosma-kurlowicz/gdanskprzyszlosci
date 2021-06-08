@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="pl" >
+  <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./mcleod-reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./png/gp-icon.png" sizes="512x512" />
+    <title>Gdańsk Przyszłości - Shift cards</title>
+  </head>
+  <body class="page">
+    <div id="skip-to-content">
+      <div class="skip-link-container">
+        <a href="#main">
+          Przejdź do treści
+        </a>
+      </div>
+    </div>
+    <button type="button" id="menu-toogle" aria-label="Zamyka i otwiera nawigację.">
+      <span class="line line-long" id="lineone"></span>
+      <span class="line line-med" id="linetwo"></span>
+      <span class="line line-med" id="linethree"></span>
+      <span class="line line-short" id="linefour"></span>
+    </button>
+    <header id="headertop">
+      <div id="header-menu-container">
+        <div>
+          <a href="./index.html" class="image-link" aria-label="Strona główna."><img src="./svg/gdansk-przyszlosci-logo-dark.svg" alt="" width="160" height="160" id="gps-logo-menu"></a>
+          <nav id="header-vertical-menu">
+            <ul>
+              
+              <li><a href="./index.html#scenariusze-przyszlosci" target="_self" rel="">Scenariusze Przyszłości</a>
+                <ul>
+                  <li><a href="./spolecznoczule-technium.html" target="_self">Społecznoczułe technium</a></li>
+                  <li><a href="./pograzone-megapolis.html" target="_self">Pogrążone megapolis</a></li>
+                  <li><a href="./kooperatywna-homeostaza.html" target="_self">Kooperatywna homeostaza</a></li>
+                  <li><a href="./blekitna-autonomia.html" target="_self">Błękitna autonomia</a></li>
+                </ul>
+              </li>
+              <li><a href="./metodologia.html" target="_self" rel="">Proces badawczy</a></li>
+              <li><a href="./slownik-terminow.html" target="_self" rel="">Słownik terminów</a></li>
+              <li><a href="./shift-cards.html" target="_self" rel="" class="current-menu-item">Shift cards</a></li>
+            </ul>
+          </nav>
+          <a href="./pdf/Gdansk-przyszlosci-raport-z-badan.pdf" class="button" target="_blank" rel="">Pobierz Raport w PDF (11MB)</a>
+        </div>
+      </div>
+      <div id="logo-patronage-header">
+        <a href="https://www.gdansk.pl/" class="image-link" aria-label="Idź do strony Gdansk.pl" target="_blank" rel="noreferrer"><img src="./svg/gdansk-logo-dark.svg" alt="" width="81" height="62"></a>
+        <a href="https://ikm.gda.pl/" class="image-link" aria-label="Idź do strony Instytutu Kultury Miejskiej w Gdańsku." target="_blank" rel="noreferrer"><img src="./svg/ikm-logo-dark.svg" alt="" width="81" height="54"></a>
+        <a href="https://infuture.institute/" class="image-link" aria-label="Idź do strony infuture.institute." target="_blank" rel="noreferrer"><img src="./svg/infuture-logo-dark.svg" alt="" width="81" height="38"></a>
+      </div>
+    </header>
+    <div class="container">
+      <main id="main">
+        <article id="shiftcards-intro-metoda">
+          <section class="block block-intro">
+            <div class="column column-narrow">
+              <div class="sticky">
+                <h1>Shift cards</h1>
+              </div>
+            </div>
+            <div class="column column-wide">
+              <p>Karty podzielone zostały na 12 obszarów tematycznych, dotyczących m.in. bezpieczeństwa, klimatu, transportu czy edukacji. Każda z nich zawiera opis wyzwania - sytuacji, przed którą możemy stanąć w ciągu nadchodzących 50 lat - i skłania do refleksji nad potencjalnymi rozwiązaniami przedstawionego problemu. Również takimi, które możemy zacząć wprowadzać już dziś.</p>
+              <a href="./pdf/Gdansk-przyszlosci-raport-z-badan.pdf" class="button column-button" target="_blank" rel="" id="button-cards">Pobierz karty w PDF (11MB)</a>
+              <p>Spróbuj odpowiedzieć na poniższe pytania i zastanowić się, jak duży jest wpływ miasta na Twoje życie oraz co możesz zrobić, żeby zmieniać je na lepsze już dziś.</p>
+              <p>Przyjrzyj się jednej karcie z talii. Zastanów się, jaki wpływ opisana zmiana może mieć na:</p>
+              <ul class="shift-card-page-intro">
+                <li>dzielnicę, w której mieszkasz?</li>
+                <li>miasto, w którym mieszkasz?</li>
+                <li>pracę, którą wykonujesz?</li>
+                <li>twoje relacje z najbliższymi?</li>
+                <li>cele, które sobie stawiasz?</li>
+                <li>projekt, który właśnie realizujesz?</li>
+                <li>wartości, które wyznajesz?</li>
+              </ul>
+              <p>Jaki będzie Twój pierwszy krok do zmiany miasta na lepsze?</p>
+           </div>
+          </section>
+          <section class="block">
+            <div class="column column-narrow">
+              <h2>Przykładowa karta</h2>
+            </div>
+            <div class="column column-wide" style="width:100%;">
+              <div class="shift-card shift-card-mobilnosc">
+                <div class="shift-card-header"><h3>Tytuł karty</h3></div>
+                <div class="shift-card-container">
+                  <div class="shift-card-quest"><b>Wyzwanie</b><p>Opis wyzwania</p></div>
+                  <div class="shift-card-desc"><p>Opis karty. Poniżej znajdują się symbole rodzaju karty:</p>
+                    <ul>
+                      <li>społeczna</li>
+                      <li>środowiskowa</li>
+                      <li>technologiczna</li>
+                      <li>ekonomiczno-gospodarcza</li>
+                    </ul>
+                  </div>
+                  <div class="shift-card-symbols">
+                    <div class="symbol number"><p>0</p></div>
+                    <div class="shift-card-example-symbols">
+                      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+                      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div>
+                      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+                      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="block" id="block-nanosekunda">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Uczenie się w kulturze nanosekundy</h2></div>
+            </div>
+            <div class="column column-wide">
+                         <!-- Shift card -->
+            <div class="shift-card shift-card-nanosekunda" id="sc-edukacja">
+              <div class="shift-card-header"><h3>Edukacja do różnorodności</h3></div>
+              <div class="shift-card-container">
+              <div class="shift-card-quest"><b>Wyzwanie</b><p>Uczenie się w kulturze nanosekundy</p></div>
+              <div class="shift-card-desc"><p>Zmienia się struktura społeczeństw. Mieszkańców edukuje się w zakresie nowych kompetencji społecznych (m.in. otwartości, komunikacji ponad podziałami, elastyczności). Taki model edukacji ma odpowiadać na globalne wyzwania – polaryzację czy kryzys migracyjny.</p></div>
+              <div class="shift-card-symbols">
+                  <div class="symbol number"><p>1</p></div>
+                  <div class="shift-card-example-symbols">
+                  <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+                  <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <!-- END OF: Shift card -->
+          <!-- Shift card -->
+          <div class="shift-card shift-card-nanosekunda" id="sc-poza">
+              <div class="shift-card-header"><h3>POZA TRADYCYJNYM SYSTEMEM EDUKACJI</h3></div>
+              <div class="shift-card-container">
+              <div class="shift-card-quest"><b>Wyzwanie</b><p>Uczenie się w kulturze nanosekundy</p></div>
+              <div class="shift-card-desc"><p>Edukacja jest procesem nieprzerwanym. Wychodzi poza ramy placówek edukacyjnych. Ludzie stale odnawiają i doskonalą swoje umiejętności. Proces edukacji staje się elastyczny i oparty o doświadczenia – te w świecie fizycznym, jak i wirtualnym.</p></div>
+              <div class="shift-card-symbols">
+                  <div class="symbol number"><p>2</p></div>
+                  <div class="shift-card-example-symbols">
+                  <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+                  <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+                </div>
+              </div>
+          </div>
+          </div>
+          <!-- END OF: Shift card -->
+          <!-- Shift card -->
+<div class="shift-card shift-card-nanosekunda" id="sc-wychowanie">
+<div class="shift-card-header"><h3>WYCHOWANIE DO INNOWACYJNOŚCI</h3></div>
+<div class="shift-card-container">
+<div class="shift-card-quest"><b>Wyzwanie</b><p>Uczenie się w kulturze nanosekundy</p></div>
+<div class="shift-card-desc"><p>Postęp technologiczny i transformacja cyfrowa wymuszają wdrożenie nowego modelu edukacji, opartego na innowacyjności. Rozwijanie umiejętności miękkich (kreatywność, krytyczne myślenie, ideacja) oraz cyfrowych (z zakresu cyberbezpieczeństwa, wykorzystywania i analizy danych) staje się konieczne ze względu na automatyzację i robotyzację pracy.</p></div>
+<div class="shift-card-symbols">
+    <div class="symbol number"><p>3</p></div>
+    <div class="shift-card-example-symbols">
+    <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+    <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+    </div>
+</div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-mirror">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Bezpieczeństwo w mirror city</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+ <div class="shift-card shift-card-mirror" id="sc-autonomia">
+  <div class="shift-card-header"><h3>AUTONOMIA SZTUCZNEJ INTELIGENCJI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>bezpieczeństwo w mirror city</p></div>
+  <div class="shift-card-desc"><p>Sztuczna inteligencja wkracza w coraz więcej obszarów ludzkiego życia. Wspiera ludzi w optymalizacji ich działań i w podejmowaniu decyzji. W pewnych aspektach przewyższa inteligencję człowieka. Autonomizacja to jeden z kierunków rozwoju tej technologii.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>4</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-mirror" id="sc-nieustanny">
+  <div class="shift-card-header"><h3>NIEUSTANNY NADZÓR MIESZKAŃCÓW</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>bezpieczeństwo w mirror city</p></div>
+  <div class="shift-card-desc"><p>Za sprawą kamer i czujników większość przestrzeni (w tym urządzeń i obiektów miejskich) oraz mieszkańców jest nieustannie monitorowana. To zarówno szansa dla szybkiego reagowania na zagrożenia, ale także pierwszy krok do ograniczenia prywatności mieszkańców w przestrzeni miejskiej.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>5</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-mirror" id="sc-algorytmizacja">
+  <div class="shift-card-header"><h3>ALGORYTMIZACJA ŻYCIA</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>bezpieczeństwo w mirror city</p></div>
+  <div class="shift-card-desc"><p>Większością naszych wyborów w sieci rządzą algorytmy. Dostarczają użytkownikowi informacji zgodnych z jego przekonaniami. Bańki informacyjne utrudniają funkcjonowanie w różnorodnych środowiskach w świecie fizycznym. Trudniej jest nam dyskutować, być otwartym na zmiany i opinie innych.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>6</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-technium">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Ekonomie napędzane technium</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+ <div class="shift-card shift-card-technium" id="sc-technofeudalizm">
+  <div class="shift-card-header"><h3>TECHNOFEUDALIZM</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>ekonomie napędzane technium</p></div>
+  <div class="shift-card-desc"><p>Wraz z rozwojem społeczeństwa w erze cyfrowej, kapitalistyczny model przestaje być wystarczający, Uwidacznia się zjawisko technofeudalizmu, w który, korporacje i firmy technologiczne funkcjonuj, wedle modelu feudalnego (społeczeństwo jest o, nich zależne i ma tylko pozorny wpływ na zarządzani, swoimi danymi), wkraczając w coraz większy, stopniu w każdy obszar życia.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>7</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-technium" id="sc-praca">
+  <div class="shift-card-header"><h3>PRACA JAKO DOBRO LUKSUSOWE</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>ekonomie napędzane technium</p></div>
+  <div class="shift-card-desc"><p>Postępująca robotyzacja i automatyzacja pracy sprawiają, że maszyny w coraz większym stopniu zastępują ludzi w pracy. W przemyśle wytwórczym są likwidowane miejsca pracy. Państwa rozważają wprowadzenie dochodu podstawowego.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>8</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-technium" id="sc-ekonomia">
+  <div class="shift-card-header"><h3>EKONOMIA KOOPERATYW</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>ekonomie napędzane technium</p></div>
+  <div class="shift-card-desc"><p>W miastach coraz silniejsze staje się zjawisko współdzielenia. Bazuje ono na modelu opartym o dostęp, a nie konieczność posiadania czegoś na własność. Nowymi wyznacznikami wymiany dóbr i transakcji zaczynają być współpraca, lokalność i transparentność.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>9</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-skorup">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Redefinicja miejskich skorup</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+ <div class="shift-card shift-card-skorup" id="sc-microliving">
+  <div class="shift-card-header"><h3>MICROLIVING</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>redefinicja miejskich skorup</p></div>
+  <div class="shift-card-desc"><p>Ze względu na postępującą urbanizację i wzrost populacji, projektowanie przestrzeni zmierza w kierunku microlivingu. To koncepcja oparta na tworzeniu bardzo małych, ale wysoce funkcjonalnych przestrzeni.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>10</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-skorup" id="sc-zyjace">
+  <div class="shift-card-header"><h3>ŻYJĄCE BUDYNKI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>redefinicja miejskich skorup</p></div>
+  <div class="shift-card-desc"><p>Wraz ze zmieniającymi się modelami życia mieszkańców, budynki stają się bardziej funkcjonalne i elastyczne. Do ich budowy wykorzystywane są nowe materiały (np. grafen czy materiały organiczne, grzyby, bambus). Żyjące budynki są w stanie dostosowywać się do zmieniających się potrzeb mieszkańców. Dodatkowo, są projektowane w sposób sprzyjający rozwijaniu więzi i interakcji pomiędzy mieszkańcami.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>11</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-skorup" id="sc-kompaktowe">
+  <div class="shift-card-header"><h3>KOMPAKTOWE PRZESTRZENIE MIEJSKIE</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>redefinicja miejskich skorup</p></div>
+  <div class="shift-card-desc"><p>W związku z dynamiczną urbanizacją, miasta oraz ich poszczególne części muszą stawać się coraz bardziej autonomiczne i kompaktowe. Coraz częściej mają gęstą, kwartałową zabudowę. W myśl koncepcji miasta 15-minutowego, usługi, praca czy szkoła znajdują się w niewielkiej odległości od miejsca zamieszkania danego mieszkańca.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>12</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+ <!-- Shift card -->
+ <div class="shift-card shift-card-skorup" id="sc-rosnaca">
+  <div class="shift-card-header"><h3>ROSNĄCA SUBURBANIZACJA</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>redefinicja miejskich skorup</p></div>
+  <div class="shift-card-desc"><p>Mamy dziś do czynienia z tendencją nazywaną rozlewaniem się miast. Jedną z konsekwencji tego zjawiska jest suburbanizacja. To sytuacja, w ramach której więcej osób mieszka poza miastem (w strefach podmiejskich), niż w mieście, a jednocześnie osoby te aktywnie korzystają z miejskiego życia (pracują tam, uczą się, korzystają z usług).</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>13</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-mobilnosc">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Mobilność w erze door to door</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+ <div class="shift-card shift-card-mobilnosc" id="sc-automatyzacja">
+  <div class="shift-card-header"><h3>AUTOMATYZACJA MOBILNOŚCI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>mobilność w erze door to door</p></div>
+  <div class="shift-card-desc"><p>Automatyzacja mobilności w dużym stopniu wpłynie na zmianę w miejskiej infrastrukturze. Rozbudowanie infrastruktury IoT (Internet of Things – Internet Rzeczy) będzie wspierać szybsze przemieszczanie się. Zmniejszać się będzie liczba stałych przystanków, a nowe, tymczasowe, dostosowywane będą do potrzeb indywidualnych mieszkańców. Komunikacja naziemna zacznie ustępować komunikacji powietrznej.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>14</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-mobilnosc" id="sc-odwrocona">
+  <div class="shift-card-header"><h3>ODWRÓCONA PIRAMIDA MOBILNOŚCI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>mobilność w erze door to door</p></div>
+  <div class="shift-card-desc"><p>W dużych europejskich miastach ulice są zwężane, a chodniki poszerzane. Ograniczony zostaje ruch aut na rzecz wdrażania koncepcji odwróconej piramidy mobilności. Pierwszeństwo w ruchu drogowym zyskują piesi i rowerzyści.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>15</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-mobilnosc" id="sc-natezenie">
+  <div class="shift-card-header"><h3>NATĘŻENIE RUCHU AUT</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>mobilność w erze door to door</p></div>
+  <div class="shift-card-desc"><p>W miastach mamy dziś do czynienia z natężeniem ruchu samochodowego i traktowaniem go jako podstawowego środka transportu w mieście. W obszar mobilności samochodowej inwestowane są ogromne fundusze. W miastach projektowanych dla samochodów trudniej jest wprowadzać elementy zrównoważonej mobilności.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>16</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-usprawnieni">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Usprawnieni, długowieczni mieszkańcy</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-usprawnieni" id="sc-udoskonalony">
+  <div class="shift-card-header"><h3>UDOSKONALONY CZŁOWIEK</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>usprawnieni, długowieczni mieszkańcy</p></div>
+  <div class="shift-card-desc"><p>Ludzie żyją coraz dłużej, mówi się o zjawisku długowieczności. Praca nad technologiami HET (Human Enhancement Technologies – technologie ulepszające ludzi) i edytowaniem genów to krok w kierunku eliminacji wielu chorób, z którymi dziś się zmagamy.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>17</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-usprawnieni" id="sc-miasto">
+  <div class="shift-card-header"><h3>MIASTO DOSTĘPNE</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>usprawnieni, długowieczni mieszkańcy</p></div>
+  <div class="shift-card-desc"><p>O dobrej jakości przestrzeni miejskich mówi się coraz częściej w kontekście dostępności. Miasto, w tym głównie przestrzenie publiczne, mają odpowiadać na potrzeby zróżnicowanych grup (osób z niepełnosprawnościami, dzieci, kobiet czy zwierząt). Taki rodzaj projektowania wpływa na poczucie bezpieczeństwa (model 8-80, w którym zarówno 8-latkowie i 80-latkowie czują się w mieście bezpiecznie).</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>18</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-usprawnieni" id="sc-agetech">
+  <div class="shift-card-header"><h3>AGETECH</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>usprawnieni, długowieczni mieszkańcy</p></div>
+  <div class="shift-card-desc"><p>Starzejące się społeczeństwo staje się jednym z głównych wyzwań, również dla miast. Rozwój sektora technologii przeciwko starzeniu się (agetech) czy technologii HET (Human Enhancement Technologies – technologie ulepszające ludzi) może wpłynąć na poprawę jakości życia tej grupy w mieście.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>19</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-wirtualna">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Wirtualna bliskość i fizyczna samotność w mieście przyszłości</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-wirtualna" id="sc-haptyczne">
+  <div class="shift-card-header"><h3>HAPTYCZNE WSPÓŁODCZUWANIE</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>wirtualna bliskość i fizyczna samotność w mieście przyszłości</p></div>
+  <div class="shift-card-desc"><p>Rozwój rzeczywistych i wirtualnych środowisk (technologie VR czy AR) oraz technologii haptycznych (ich zadaniem jest multisensoryczne komunikowanie się z użytkownikiem, głównie przez oddziaływanie na zmysł dotyku) umożliwi współodczuwanie w świecie cyfrowym na poziomie podobnym do tego w świecie rzeczywistym. Mówi się o relacjach z robotami i internecie zmysłów, czyli o przenoszeniu możliwości odczuwania zmysłów innych niż wzrok i słuch do świata wirtualnego.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>20</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-wirtualna" id="sc-przypadkowosc">
+  <div class="shift-card-header"><h3>PRZYPADKOWOŚĆ KONTAKTÓW</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>wirtualna bliskość i fizyczna samotność w mieście przyszłości</p></div>
+  <div class="shift-card-desc"><p>Miasto to przestrzeń wymiany treści społecznych i kulturowych. Wraz z rozwojem technologii, a co za tym idzie mniejszą częstotliwością korzystania z usług w mieście, zmniejsza się poziom wzajemnych interakcji w świecie rzeczywistym. Coraz częściej mówi się o potrzebie ujakościowienia przestrzeni wspólnych i stymulowania mieszkańców do spędzania w nich czasu.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>21</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-wirtualna" id="sc-atomizacja">
+  <div class="shift-card-header"><h3>ATOMIZACJA ŻYCIA SPOŁECZNEGO</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>wirtualna bliskość i fizyczna samotność w mieście przyszłości</p></div>
+  <div class="shift-card-desc"><p>Samotność określana jest jako plaga XXI wieku. Ma to związek z jednej strony ze starzejącym się społeczeństwem i rosnącą liczbą gospodarstw jednoosobowych. Z drugiej, z atomizacją będącą konsekwencją nadmiernego korzystania z technologii, które nie są dziś w stanie umożliwić budowania relacji na tym samym poziomie w świecie wirtualnym, co w świecie fizycznym.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>22</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-spolaryzowane">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Kierowanie miastem w spolaryzowanym społeczeństwie</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-kierowanie" id="sc-demokratyzacja">
+  <div class="shift-card-header"><h3>DEMOKRATYZACJA MIASTA</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>Kierowanie miastem w spolaryzowanym społeczeństwie</p></div>
+  <div class="shift-card-desc"><p>W miastach zaczynają być widoczne rozwiązania oparte na demokratyzacji. Polegają one na stałym współdecydowaniu mieszkańców w kwestiach miejskich (składanie wniosków, komentowanie, głosowanie, prowadzenie procesów partycypacyjnych) oraz tworzeniu otwartych narzędzi, w ramach których cyfrowe dane o mieście są transparentne. Wpisany w to jest też cały system reagowania społecznego, niepisanych zasad i praw postępowania.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>23</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-kierowanie" id="sc-samowystarczalnosc">
+  <div class="shift-card-header"><h3>Samowystarczalność miejska</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>Kierowanie miastem w spolaryzowanym społeczeństwie</p></div>
+  <div class="shift-card-desc"><p>Samowystarczalność miejska to model, w którym poszczególne obszary miasta stają się coraz bardziej autonomiczne. Mówi się o urban mining (odzysk materiałów, np. miedzi i stali z nieużywanej infrastruktury miejskiej), autonomicznych gospodarstwach domowych, agrihood (intergracja rolnictwa z dzielnicami mieszkaniowymi) czy wymianie energii elektrycznej dzięki technologii blockchain.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>24</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-obcy">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Obcy i inny w miejskich strukturach mieszkańców</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-obcy" id="sc-walki">
+  <div class="shift-card-header"><h3>WALKI SPOŁECZNE</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>obcy i inny w miejskich strukturach mieszkańców</p></div>
+  <div class="shift-card-desc"><p>Nierówności społeczne mają bezpośrednie przełożenie na funkcjonowanie miast. Podział przestrzeni dla wyższych i niższych klas, silna polaryzacja, silosowość, powodują segregację społeczną i przestrzenną (a co za tym idzie m.in. wykluczenie mieszkaniowe) i mogą doprowadzać do walk społecznych.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>25</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-obcy" id="sc-grupy">
+  <div class="shift-card-header"><h3>GRUPY NIEWIDZIALNE</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>obcy i inny w miejskich strukturach mieszkańców</p></div>
+  <div class="shift-card-desc"><p>Coraz więcej jest w miastach tzw. niewidzialnych. To grupy osób żyjących na marginesie życia miejskiego, których potrzeby nie są dostrzegane i uwzględniane w ogólnych strategiach. Mowa tu między innymi o imigrantach, osobach wykluczonych cyfrowo, z niepełnosprawnościami.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>26</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-obcy" id="sc-zmiany">
+  <div class="shift-card-header"><h3>ZMIANY POPULACJI MIAST</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>obcy i inny w miejskich strukturach mieszkańców</p></div>
+  <div class="shift-card-desc"><p>Zmienia się struktura populacji w miastach. Rośnie odsetek osób starszych, a spada odsetek dzieci. Mówi się już o pladze bezpłodności. Wciąż rośnie liczba gospodarstw bezdzietnych czy jednoosobowych.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>27</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-katastrofa">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Życie miejskie w katastrofie ekologicznej</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-katastrofa" id="sc-alternatywne">
+  <div class="shift-card-header"><h3>ALTERNATYWNE ŹRÓDŁA ENERGII</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>życie miejskie w katastrofie ekologicznej</p></div>
+  <div class="shift-card-desc"><p>Konieczność poszukiwania innych, alternatywnych źródeł energii to ogromne wyzwanie dla miast. Konieczne są rozwiązania zapewniające stały i nieograniczony dostęp do energii pozyskiwanej w sposób jak najbardziej zrównoważony. Rozwija się m.in. energetyka wodorowa, energetyka słoneczna, wodna, wiatrowa. Pojawiają się pomysły wykorzystywania śmieci jako zasobów - w tym także jako paliwa.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>28</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-katastrofa" id="blekitny">
+  <div class="shift-card-header"><h3>BŁĘKITNY KRYZYS</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>życie miejskie w katastrofie ekologicznej</p></div>
+  <div class="shift-card-desc"><p>Na świecie zmagamy się z niedoborem wody słodkiej. Ma to bezpośredni wpływ m.in. na produkcję i rolnictwo. Jednym z rozwiązań tego problemu może być odsalanie mórz i oceanów. Z kolei wskutek zmian klimatu, miasta – szczególnie te położone przy linii brzegowej – muszą brać pod uwagę ryzyko zalania.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>29</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-katastrofa" id="sc-nieekologiczne">
+  <div class="shift-card-header"><h3>NIEEKOLOGICZNE MATERIAŁY</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>życie miejskie w katastrofie ekologicznej</p></div>
+  <div class="shift-card-desc"><p>Beton to po wodzie jeden z najczęściej używanych materiałów na świecie. Produkcja cementu odpowiada za 8% światowych emisji co2. Deficyty piasku to istotny problem w branży budowlanej. Mamy do czynienia ze zjawiskiem starzejących się metropolii z nieekologiczną architekturą i infrastrukturą drogową.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>30</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-katastrofa" id="sc-wsiowienie">
+  <div class="shift-card-header"><h3>WSIOWIENIE MIAST</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>życie miejskie w katastrofie ekologicznej</p></div>
+  <div class="shift-card-desc"><p>Wsiowienie miast to koncepcja oparta o projektowanie środowiskowe, skoncentrowane na budowaniu miast przyjaznych środowisku i społecznie
+ dpowiedzialnych. W jej ramach dużą uwagę przykłada się także do dzielnic i ich autonomii, a nie do miasta jako jednego, określonego tworu.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>31</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-zasoby">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Kończące się zasoby dla rosnącej populacji mieszkańców</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-zasoby" id="sc-niezrownowazona">
+  <div class="shift-card-header"><h3>NIEZRÓWNOWAŻONA PRODUKCJA ŻYWNOŚCI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>kończące się zasoby dla rosnącej populacji mieszkańców</p></div>
+  <div class="shift-card-desc"><p>Populacja świata rośnie. Niezrównoważona produkcja i dystrybucja żywności (produkuje się dużo jedzenia kiepskiej jakości, z czego odsetek jest marnowany już na etapie produkcji czy transportu) pogłębiają kryzys klimatyczny. Drożejąca żywność staje się powodem wzrostu niepokojów społecznych.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>32</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-zasoby" id="sc-nowa">
+  <div class="shift-card-header"><h3>NOWA JAKOŚĆ ŻYWNOŚCI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>kończące się zasoby dla rosnącej populacji mieszkańców</p></div>
+  <div class="shift-card-desc"><p>System produkcji żywności jest niezrównoważony i niewydolny. Produkcja mięsa ma negatywny wpływ na klimat. Poszukuje się alternatywnych źródeł białka. Powraca się do uprawy roślin wcześniej wypartych z procesu naturkulturowania w miastach.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>33</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-ekongo.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+          <section class="block" id="block-strumienie">
+            <div class="column column-narrow"><div class="sticky">
+              <h2>Nieograniczone strumienie danych</h2></div>
+            </div>
+            <div class="column column-wide">
+              <!-- Shift card -->
+<div class="shift-card shift-card-strumienie" id="sc-wirtualne">
+  <div class="shift-card-header"><h3>WIRTUALNE KOPIE ŚWIADOMOŚCI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>nieograniczone strumienie danych</p></div>
+  <div class="shift-card-desc"><p>Granice pomiędzy światem rzeczywistym i wirtualnym są coraz mniej wyraźne. Prace nad technologią Brain-Computer Interface to krok w kierunku reagowania komputerów na ludzkie myśli, ale i przenoszenia świadomości człowieka do komputera i tworzenia jego wirtualnej kopii.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>34</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-strumienie" id="sc-inteligentny">
+  <div class="shift-card-header"><h3>INTELIGENTNY DOM</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>nieograniczone strumienie danych</p></div>
+  <div class="shift-card-desc"><p>Rozrastająca się infrastruktura IoT (Internet of Things – Internet Rzeczy) umożliwia inteligentne sterowanie urządzeniami domowymi. Część obowiązków domowych wykonywana jest przez inteligentne sprzęty, które coraz częściej zyskują charakter doradcy czy pomocnika.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>35</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-strumienie" id="sc-technologie">
+  <div class="shift-card-header"><h3>TECHNOLOGIE DLA LUDZKOŚCI</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>nieograniczone strumienie danych</p></div>
+  <div class="shift-card-desc"><p>Coraz częściej mówi się o technologiach, które mają wspierać zrównoważone życie w miastach. Koncepcja Solarpunk zakłada wykorzystanie technologii do rozwiązania współczesnych, miejskich problemów, głównie związanych z ekologią i zrównoważonym rozwojem.</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>36</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+<!-- Shift card -->
+<div class="shift-card shift-card-strumienie" id="sc-elektrosmog">
+  <div class="shift-card-header"><h3>ELEKTROSMOG</h3></div>
+  <div class="shift-card-container">
+  <div class="shift-card-quest"><b>Wyzwanie</b><p>nieograniczone strumienie danych</p></div>
+  <div class="shift-card-desc"><p>Zanieczyszczenie cyfrowe to rodzaj zanieczyszczenia emitowanego przez korzystanie z technologii. Dotyczy wszystkich rozwiązań napędzanych przez technologie i internet. Wynikiem tego jest także zanieczyszczenie światłem i dźwiękiem. W miastach coraz większą uwagę zwraca się na osoby zmagające się z elektrowrażliwością (nadmierna wrażliwość na pole elektromagnetyczne).</p></div>
+  <div class="shift-card-symbols">
+      <div class="symbol number"><p>37</p></div>
+      <div class="shift-card-example-symbols">
+      <div class="symbol"><img src="./svg/karta-technologiczna.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-srodowiskowa.svg" alt=""></div>
+      <div class="symbol"><img src="./svg/karta-spoleczna.svg" alt=""></div></div>
+  </div>
+</div>
+</div>
+<!-- END OF: Shift card -->
+            </div>
+          </section>
+    </article>
+      </main>
+    </div>
+    <footer>
+      <script> </script>
+      <div id="footer-meritorical">
+        <img src="./svg/gdansk-przyszlosci-logo-dark.svg" alt="" width="120" height="120" class="logo">
+        <div id="footer-navigation">
+          <nav>
+            <ul>
+              <li><a href="./polityka-prywatnosci.html" target="_self">Polityka prywatności</a></li>
+              <li><a href="./regulamin.html" target="_self">Regulamin</a></li>
+              <li><a href="./polityka-dostepnosci.html" target="_self">Polityka dostępności</a></li>
+              <li><a href="./regulamin.html#regulamin-kontakt" target="_self">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div id="footer-meritorical-patronage">
+            <a href="https://www.gdansk.pl/"  target="_blank" aria-label="Idź do strony Gdańsk.pl" rel="noreferrer"><img src="./svg/gdansk-logo-dark.svg" alt="" width="81" height="62"></a>
+            <a href="https://ikm.gda.pl/" target="_blank" aria-label="Idź do strony Instytutu Kultury Miejskiej w Gdańsku." rel="noreferrer"><img src="./svg/ikm-logo-dark.svg" alt="" width="81" height="54"></a>
+            <a href="https://infuture.institute/" target="_blank" aria-label="Idź do strony infuture.institute." rel="noreferrer"><img src="./svg/infuture-logo-dark.svg" alt="" width="81" height="38"></a>
+          </div>
+        </div>
+      </div>
+      <div id="footer-technical">
+        <p><a href="https://ikm.gda.pl/" target="_blank" rel="noopener">Instytut Kultury Miejskiej</a> &#169; 2021</p>
+      </div>
+      <script>
+        var menu = document.getElementById('headertop');
+        var el = document.getElementById('menu-toogle');
+        var lone = document.getElementById('lineone');
+        var ltwo = document.getElementById('linetwo');
+        var lthree = document.getElementById('linethree');
+        var lfour = document.getElementById('linefour');
+        menu.style.width = "0";
+        ltwo.style.marginLeft = "0px";
+        lthree.style.marginLeft = "0px";
+        lfour.style.marginLeft = "0px";
+  
+        function menuSwitcher() {
+        if (menu.style.width == "0px") {
+        menu.style.width = "270px";
+        ltwo.style.marginLeft = "8px";
+        lthree.style.marginLeft = "8px";
+        lfour.style.marginLeft = "16px";
+        } else {
+        menu.style.width = "0px";
+        ltwo.style.marginLeft = "0px";
+        lthree.style.marginLeft = "0px";
+        lfour.style.marginLeft = "0px";
+        } 
+        }
+
+        // Add event listener to switcher
+        el.addEventListener("click", menuSwitcher, false);
+      </script>
+    </footer>
+  </body>
+</html>
